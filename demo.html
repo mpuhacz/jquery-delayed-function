@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <style>
+  div {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    float: left;
+  }
+  ul li {
+    display: none;
+    background: #DDD;
+    width: 300px;
+    height: 300px;
+    float: left;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="plugin.js"></script>
+</head>
+<body>
+ 
+<p><button>Demo</button></p>
+
+
+<ul id="ul1">
+  <li>OBJ 1</li>
+  <li>OBJ 2</li>
+  <li>OBJ 3</li>
+</ul>
+
+<ul id="ul2">
+  <li class="show_me">OBJ 1</li>
+  <li>OBJ 2</li>
+  <li class="show_me">OBJ 3</li>
+</ul>
+
+
+<script>
+$( "button" ).click(function() {
+  $('#ul2').delayedFunc({delay: 100, selector: '.show_me', animFunc: 'fadeIn'});
+});
+</script>
+ 
+</body>
+</html>
