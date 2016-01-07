@@ -40,7 +40,14 @@
 
 <script>
 $( "button" ).click(function() {
-  $('#ul2').delayedFunc({delay: 100, selector: '.show_me', animFunc: 'fadeIn'});
+  $('#ul2').delayedFunc({
+    delay: 100, 
+    selector: '.show_me',
+    func: 'fadeIn',
+    settings: {
+      duration: 10
+    }
+  });
 });
 </script>
  
