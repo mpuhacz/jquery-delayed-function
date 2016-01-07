@@ -13,3 +13,5 @@ Amazing plugin made exclusively for Guys from flow2code.com
     }
   });
 ```
+
+Leaving selector option empty, selects parent children with $.children() func;
